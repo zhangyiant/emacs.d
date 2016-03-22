@@ -1,4 +1,3 @@
-;(setq inhibit-startup-screen t)
+(setq inhibit-startup-screen t)
+(setq current-language-environment "UTF-8")
 (prefer-coding-system 'utf-8)
-(setq coding-system-for-read 'utf-8)
-(setq coding-system-for-write 'utf-8)
