@@ -1,7 +1,7 @@
 (setq inhibit-startup-screen t)
 (setq current-language-environment "UTF-8")
 (prefer-coding-system 'utf-8)
-(global-whitespace-mode 1)
+;(global-whitespace-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
