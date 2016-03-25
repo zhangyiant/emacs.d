@@ -4,7 +4,7 @@
 ;(global-whitespace-mode 1)
 (setq line-number-mode t)
 (setq column-number-mode t)
-(global-linum-mode t)
+;(global-linum-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
