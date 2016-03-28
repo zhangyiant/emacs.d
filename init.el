@@ -6,6 +6,14 @@
 (setq column-number-mode t)
 ;(global-linum-mode t)
 
+;cmake mode
+(setq auto-mode-alist
+      (append
+       '(("CMakeLists\\.txt\\'" . cmake-mode))
+       '(("\\.cmake\\'" . cmake-mode))
+       auto-mode-alist))
+(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
