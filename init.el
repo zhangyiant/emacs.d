@@ -14,6 +14,11 @@
        auto-mode-alist))
 (autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
 
+;MELPA
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
