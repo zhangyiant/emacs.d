@@ -19,6 +19,17 @@
 (add-to-list 'package-archives
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
+(add-to-list 'load-path
+	     "~/.emacs.d/elpa/yasnippet-0.9.1")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(add-hook 'after-init-hook 'global-company-mode)
+(defun my/python-mode-hook ()
+(add-to-list 'company-backends 'company-jedi))
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
