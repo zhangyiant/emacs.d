@@ -3,3 +3,4 @@ semanticdb/
 elpa/
 eshell/
 auto-save-list/
+.python-environments/
