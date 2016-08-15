@@ -20,7 +20,7 @@
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
 (add-to-list 'load-path
-	     "~/.emacs.d/elpa/yasnippet-0.9.1")
+	     "~/.emacs.d/elpa/yasnippet-0.10.0")
 (require 'yasnippet)
 (yas-global-mode 1)
 
