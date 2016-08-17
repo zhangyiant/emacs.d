@@ -20,9 +20,52 @@
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
 (add-to-list 'load-path
-	     "~/.emacs.d/packages/yasnippet-0.9.1")
+	     "~/.emacs.d/packages/yasnippet-0.9.1/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/company-0.8.12/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/company-jedi-0.4/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/groovy-mode-1.0.1/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/jedi-core-0.2.7/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/python-environment-0.0.2/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/async-1.8/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/epl-0.8/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/let-alist-1.0.4/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/flycheck-27/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/pkg-info-0.6/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/concurrent-0.4.0/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/ggtags-0.8.11/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/popup-0.5.3/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/ctable-0.1.2/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/seq-2.15/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/dash-2.12.1/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/helm-1.9.5/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/deferred-0.4.0/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/helm-core-1.9.5/")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/epc-0.1.0/")
+
 (require 'yasnippet)
 (yas-global-mode 1)
+
+(require 'company)
 
 (add-hook 'after-init-hook 'global-company-mode)
 (defun my/python-mode-hook ()
