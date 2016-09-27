@@ -5,14 +5,7 @@
 (setq line-number-mode t)
 (setq column-number-mode t)
 ;(global-linum-mode t)
-
-;cmake mode
-(setq auto-mode-alist
-      (append
-       '(("CMakeLists\\.txt\\'" . cmake-mode))
-       '(("\\.cmake\\'" . cmake-mode))
-       auto-mode-alist))
-(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
+;(setq-default indent-tabs-mode nil)
 
 ;MELPA
 (require 'package)
@@ -61,6 +54,17 @@
 	     "~/.emacs.d/packages/helm-core-1.9.5/")
 (add-to-list 'load-path
 	     "~/.emacs.d/packages/epc-0.1.0/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/js2-mode-20160623/")
+
+;cmake mode
+(setq auto-mode-alist
+      (append
+       '(("CMakeLists\\.txt\\'" . cmake-mode))
+       '(("\\.cmake\\'" . cmake-mode))
+       '(("\\.js\\'" . js2-mode))
+       auto-mode-alist))
+(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
 
 (require 'yasnippet)
 (yas-global-mode 1)
