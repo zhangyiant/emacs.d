@@ -56,6 +56,8 @@
 	     "~/.emacs.d/packages/epc-0.1.0/")
 (add-to-list 'load-path
              "~/.emacs.d/packages/js2-mode-20160623/")
+(add-to-list 'load-path
+	     "~/.emacs.d/modes/")
 
 ;cmake mode
 (setq auto-mode-alist
@@ -64,7 +66,12 @@
        '(("\\.cmake\\'" . cmake-mode))
        '(("\\.js\\'" . js2-mode))
        auto-mode-alist))
-(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
+
+;;(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
+
+(require 'cmake-mode)
+(require 'groovy-mode)
+(require 'js2-mode)
 
 (require 'yasnippet)
 (yas-global-mode 1)
