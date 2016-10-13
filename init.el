@@ -81,6 +81,8 @@
 (yas-global-mode 1)
 
 (require 'company)
+(require 'flycheck)
+(global-flycheck-mode)
 
 (add-hook 'after-init-hook 'global-company-mode)
 (defun my/python-mode-hook ()
