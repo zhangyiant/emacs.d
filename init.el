@@ -71,7 +71,11 @@
 
 (require 'cmake-mode)
 (require 'groovy-mode)
+
 (require 'js2-mode)
+(setq js2-mode-hook
+      '(lambda () (progn
+		    (set-variable 'indent-tabs-mode nil))))
 
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -84,6 +88,7 @@
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 
 (add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
+(add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
