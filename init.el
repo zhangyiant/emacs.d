@@ -94,6 +94,7 @@
 
 (add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
 (add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
+(add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
