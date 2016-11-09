@@ -59,6 +59,9 @@
 (add-to-list 'load-path
 	     "~/.emacs.d/modes/")
 
+;set indent tabs
+(set-variable 'indent-tabs-mode nil)
+
 ;cmake mode
 (setq auto-mode-alist
       (append
