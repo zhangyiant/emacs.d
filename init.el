@@ -8,6 +8,10 @@
 (setq line-number-mode t)
 (setq column-number-mode t)
 (setq-default tab-width 4)
+(setq-default c-basic-offset 4)
+(setq-default c-indent-level 4)
+(setq-default indent-tabs-mode nil)
+
 ;(global-linum-mode t)
 ;(setq-default indent-tabs-mode nil)
 
