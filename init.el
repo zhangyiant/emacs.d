@@ -1,9 +1,13 @@
+;;; package --- Summary:
+;;; Commentary:
+;;; Code:
 (setq inhibit-startup-screen t)
 (setq current-language-environment "UTF-8")
 (prefer-coding-system 'utf-8)
 ;(global-whitespace-mode 1)
 (setq line-number-mode t)
 (setq column-number-mode t)
+(setq-default tab-width 4)
 ;(global-linum-mode t)
 ;(setq-default indent-tabs-mode nil)
 
