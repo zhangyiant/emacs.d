@@ -1,4 +1,3 @@
-;;; for Mac Automator test
 ;;; package --- Summary:
 ;;; Commentary:
 ;;; Code:
