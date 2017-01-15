@@ -81,7 +81,7 @@
 ;;(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
 
 (require 'cmake-mode)
-(require 'groovy-mode)
+;;(require 'groovy-mode)
 
 (require 'js2-mode)
 (setq js2-mode-hook
@@ -100,10 +100,10 @@
 (add-to-list 'company-backends 'company-jedi))
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 
-(add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
-(add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
-(add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
-(add-to-list 'auto-mode-alist '("build.gradle\\'" . groovy-mode))
+;;(add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
+;;(add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
+;;(add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
+;;(add-to-list 'auto-mode-alist '("build.gradle\\'" . groovy-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
