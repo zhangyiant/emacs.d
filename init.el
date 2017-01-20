@@ -4,7 +4,6 @@
 (setq inhibit-startup-screen t)
 (setq current-language-environment "UTF-8")
 (prefer-coding-system 'utf-8)
-(global-whitespace-mode 1)
 (setq line-number-mode t)
 (setq column-number-mode t)
 (setq-default tab-width 4)
@@ -97,7 +96,8 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 (defun my/python-mode-hook ()
-(add-to-list 'company-backends 'company-jedi))
+  (add-to-list 'company-backends 'company-jedi)
+  (whitespace-mode))
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 
 ;;(add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
