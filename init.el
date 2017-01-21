@@ -1,6 +1,13 @@
 ;;; package --- Summary:
 ;;; Commentary:
 ;;; Code:
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq inhibit-startup-screen t)
 (setq current-language-environment "UTF-8")
 (prefer-coding-system 'utf-8)
@@ -64,6 +71,8 @@
 (add-to-list 'load-path
              "~/.emacs.d/packages/js2-mode-20160623/")
 (add-to-list 'load-path
+             "~/.emacs.d/packages/web-mode-14/")
+(add-to-list 'load-path
 	     "~/.emacs.d/modes/")
 
 ;set indent tabs
@@ -76,10 +85,12 @@
        '(("\\.cmake\\'" . cmake-mode))
        '(("\\.js\\'" . js2-mode))
        auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
 
 ;;(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
 
 (require 'cmake-mode)
+(require 'web-mode)
 ;;(require 'groovy-mode)
 
 (require 'js2-mode)
@@ -114,7 +125,8 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (deeper-blue))))
+ '(custom-enabled-themes (quote (deeper-blue)))
+ '(package-selected-packages (quote (web-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
