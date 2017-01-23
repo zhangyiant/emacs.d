@@ -85,7 +85,7 @@
        '(("\\.cmake\\'" . cmake-mode))
        '(("\\.js\\'" . js2-mode))
        auto-mode-alist))
-(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 
 ;;(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
 
