@@ -73,6 +73,22 @@
 (add-to-list 'load-path
              "~/.emacs.d/packages/web-mode-14/")
 (add-to-list 'load-path
+             "~/.emacs.d/packages/elpy-1.14.1/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/find-file-in-project-5.2.7/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/highlight-indentation-0.7.0/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/s-1.11.0/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/ivy-0.8.0/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/pyvenv-1.10/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/find-file-in-project-5.2.7/")
+(add-to-list 'load-path
 	     "~/.emacs.d/modes/")
 
 ;set indent tabs
@@ -105,9 +121,11 @@
 (require 'flycheck)
 (global-flycheck-mode)
 
+(require 'elpy)
+(elpy-enable)
+
 (add-hook 'after-init-hook 'global-company-mode)
 (defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi)
   (whitespace-mode))
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 
@@ -126,7 +144,7 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (deeper-blue)))
- '(package-selected-packages (quote (web-mode))))
+ '(package-selected-packages (quote (highlight-indentation))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
