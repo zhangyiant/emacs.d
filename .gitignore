@@ -4,3 +4,4 @@ elpa/
 eshell/
 auto-save-list/
 .python-environments/
+*.pyc
