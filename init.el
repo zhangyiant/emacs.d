@@ -25,6 +25,8 @@
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/"))
 
 (add-to-list 'load-path
 	     "~/.emacs.d/packages/yasnippet-0.9.1/")
@@ -144,7 +146,7 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (deeper-blue)))
- '(package-selected-packages (quote (highlight-indentation))))
+ '(package-selected-packages (quote (jdee highlight-indentation))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
