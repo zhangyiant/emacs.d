@@ -43,13 +43,7 @@
 (add-to-list 'load-path
 	     "~/.emacs.d/packages/async-1.8/")
 (add-to-list 'load-path
-	     "~/.emacs.d/packages/epl-0.8/")
-(add-to-list 'load-path
 	     "~/.emacs.d/packages/let-alist-1.0.4/")
-(add-to-list 'load-path
-	     "~/.emacs.d/packages/flycheck-27/")
-(add-to-list 'load-path
-	     "~/.emacs.d/packages/pkg-info-0.6/")
 (add-to-list 'load-path
 	     "~/.emacs.d/packages/concurrent-0.4.0/")
 (add-to-list 'load-path
@@ -60,8 +54,6 @@
 	     "~/.emacs.d/packages/ctable-0.1.2/")
 (add-to-list 'load-path
 	     "~/.emacs.d/packages/seq-2.15/")
-(add-to-list 'load-path
-	     "~/.emacs.d/packages/dash-2.12.1/")
 (add-to-list 'load-path
 	     "~/.emacs.d/packages/helm-1.9.5/")
 (add-to-list 'load-path
@@ -90,6 +82,18 @@
              "~/.emacs.d/packages/pyvenv-1.10/")
 (add-to-list 'load-path
              "~/.emacs.d/packages/find-file-in-project-5.2.7/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/epl-20150517.433/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/flycheck-20170309.145/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/memoize-20130421.1234/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/pkg-info-20150517.443/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/dash-20170207.2056/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/jdee-20170314.1202/")
 (add-to-list 'load-path
 	     "~/.emacs.d/modes/")
 
@@ -130,6 +134,8 @@
 (defun my/python-mode-hook ()
   (whitespace-mode))
 (add-hook 'python-mode-hook 'my/python-mode-hook)
+
+(load "jdee")
 
 ;;(add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
 ;;(add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
