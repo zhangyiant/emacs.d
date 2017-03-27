@@ -137,6 +137,10 @@
 
 (load "jdee")
 
+;; adjust font size for large screen
+(if (string= system-type "darwin")
+    (set-face-attribute 'default nil :height 200))
+
 ;;(add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
 ;;(add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
 ;;(add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
