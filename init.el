@@ -138,7 +138,7 @@
 (load "jdee")
 
 ;; adjust font size for large screen
-(if (string= system-type "darwin")
+(if (string= (system-name) "peter-zhang.ads.autodesk.com")
     (set-face-attribute 'default nil :height 200))
 
 ;;(add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
