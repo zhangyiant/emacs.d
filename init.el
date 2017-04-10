@@ -67,7 +67,7 @@
 (add-to-list 'load-path
              "~/.emacs.d/packages/web-mode-14/")
 (add-to-list 'load-path
-             "~/.emacs.d/packages/elpy-1.14.1/")
+             "~/.emacs.d/packages/elpy/")
 (add-to-list 'load-path
              "~/.emacs.d/packages/find-file-in-project-5.2.7/")
 (add-to-list 'load-path
@@ -96,6 +96,9 @@
              "~/.emacs.d/packages/jdee-20170314.1202/")
 (add-to-list 'load-path
 	     "~/.emacs.d/modes/")
+
+(require 'helm-config)
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 ;set indent tabs
 (set-variable 'indent-tabs-mode nil)
@@ -156,6 +159,8 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (deeper-blue)))
+ '(elpy-test-django-with-manage t)
+ '(elpy-test-runner (quote elpy-test-django-runner))
  '(package-selected-packages (quote (jdee highlight-indentation))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
