@@ -1,6 +1,7 @@
 ede-projects.el
 semanticdb/
 elpa/
+server/
 eshell/
 auto-save-list/
 .python-environments/
