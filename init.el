@@ -159,6 +159,7 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (deeper-blue)))
+ '(elpy-test-django-runner-manage-command (quote ("./manage.py" "test" "--noinput")))
  '(elpy-test-django-with-manage t)
  '(elpy-test-runner (quote elpy-test-django-runner))
  '(package-selected-packages (quote (jdee highlight-indentation))))
