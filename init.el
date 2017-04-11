@@ -159,9 +159,9 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (deeper-blue)))
- '(jdee-server-dir "d:/git/jdee-server/target")
  '(elpy-test-django-with-manage t)
  '(elpy-test-runner (quote elpy-test-django-runner))
+ '(jdee-server-dir "d:/git/jdee-server/target")
  '(package-selected-packages (quote (jdee highlight-indentation))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
