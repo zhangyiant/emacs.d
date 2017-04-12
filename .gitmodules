@@ -1,3 +1,6 @@
 [submodule "packages/elpy"]
 	path = packages/elpy
 	url = https://github.com/zhangyiant/elpy.git
+[submodule "packages/groovy-emacs-modes"]
+	path = packages/groovy-emacs-modes
+	url = https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes.git
