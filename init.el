@@ -35,7 +35,7 @@
 (add-to-list 'load-path
 	     "~/.emacs.d/packages/company-jedi-0.4/")
 (add-to-list 'load-path
-	     "~/.emacs.d/packages/groovy-mode-1.0.1/")
+	     "~/.emacs.d/packages/groovy-emacs-modes/")
 (add-to-list 'load-path
 	     "~/.emacs.d/packages/jedi-core-0.2.7/")
 (add-to-list 'load-path
@@ -116,7 +116,7 @@
 
 (require 'cmake-mode)
 (require 'web-mode)
-;;(require 'groovy-mode)
+(require 'groovy-mode)
 
 (require 'js2-mode)
 (setq js2-mode-hook
@@ -144,10 +144,10 @@
 (if (string= (system-name) "peter-zhang.ads.autodesk.com")
     (set-face-attribute 'default nil :height 200))
 
-;;(add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
-;;(add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
-;;(add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
-;;(add-to-list 'auto-mode-alist '("build.gradle\\'" . groovy-mode))
+(add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
+(add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
+(add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
+(add-to-list 'auto-mode-alist '("build.gradle\\'" . groovy-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
