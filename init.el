@@ -95,7 +95,7 @@
 (add-to-list 'load-path
              "~/.emacs.d/packages/jdee-20170314.1202/")
 (add-to-list 'load-path
-	     "~/.emacs.d/modes/")
+             "~/.emacs.d/packages/cmake-mode/")
 
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -111,8 +111,6 @@
        '(("\\.js\\'" . js2-mode))
        auto-mode-alist))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-
-;;(autoload 'cmake-mode "~/.emacs.d/modes/cmake-mode.el" t)
 
 (require 'cmake-mode)
 (require 'web-mode)
