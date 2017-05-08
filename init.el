@@ -114,12 +114,23 @@
 
 (require 'cmake-mode)
 (require 'web-mode)
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+    (setq web-mode-markup-indent-offset 2)
+    (setq web-mode-css-indent-offset 2)
+    (setq web-mode-code-indent-offset 2)
+    (setq web-mode-indent-style 2)
+)
+(add-hook 'web-mode-hook 'my-web-mode-hook)
+
 (require 'groovy-mode)
 
 (require 'js2-mode)
 (setq js2-mode-hook
       '(lambda () (progn
-		    (set-variable 'indent-tabs-mode nil))))
+                    (set-variable 'indent-tabs-mode nil)
+                    (setq js2-basic-offset 2))))
 
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -140,7 +151,7 @@
 
 ;; adjust font size for large screen
 (if (string= (system-name) "peter-zhang.ads.autodesk.com")
-    (set-face-attribute 'default nil :height 200))
+    (set-face-attribute 'default nil :height 150))
 
 (add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
 (add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
