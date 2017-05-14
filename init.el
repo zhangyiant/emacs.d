@@ -9,8 +9,9 @@
 (package-initialize)
 
 (setq inhibit-startup-screen t)
-(setq current-language-environment "UTF-8")
-(prefer-coding-system 'utf-8)
+;; (setq current-language-environment "UTF-8")
+;;(prefer-coding-system 'utf-8)
+(modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
 (setq line-number-mode t)
 (setq column-number-mode t)
 (setq-default tab-width 4)
