@@ -157,6 +157,27 @@
 (add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
 (add-to-list 'auto-mode-alist '("build.gradle\\'" . groovy-mode))
 
+(defun save-my-window-configuration-1 ()
+  "Save my window configuration 1."
+  (interactive)
+  (window-configuration-to-register ?A))
+(defun save-my-window-configuration-2 ()
+  "Save my window configuration 2."
+  (interactive)
+  (window-configuration-to-register ?B))
+(defun load-my-window-configuration-1 ()
+  "Load my window configuration 1."
+  (interactive)
+  (jump-to-register ?A))
+(defun load-my-window-configuration-2 ()
+  "Load my window configuration 2."
+  (interactive)
+  (jump-to-register ?B))
+(global-set-key (kbd "<f5>") 'save-my-window-configuration-1)
+(global-set-key (kbd "<f6>") 'load-my-window-configuration-1)
+(global-set-key (kbd "<f7>") 'save-my-window-configuration-2)
+(global-set-key (kbd "<f8>") 'load-my-window-configuration-2)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
