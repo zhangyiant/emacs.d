@@ -4,3 +4,6 @@
 [submodule "packages/groovy-emacs-modes"]
 	path = packages/groovy-emacs-modes
 	url = https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes.git
+[submodule "packages/vue-mode"]
+	path = packages/vue-mode
+	url = https://github.com/geekplux/vue-mode
