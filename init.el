@@ -95,6 +95,14 @@
              "~/.emacs.d/packages/jdee-20170314.1202/")
 (add-to-list 'load-path
              "~/.emacs.d/packages/cmake-mode/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/mmm-mode-20170220.1548/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/vue-mode/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/sws-mode-20150317.1245/")
+(add-to-list 'load-path
+             "~/.emacs.d/packages/stylus-mode-20150313.812/")
 
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -113,6 +121,10 @@
 
 (require 'cmake-mode)
 (require 'web-mode)
+(require 'sws-mode)
+(require 'stylus-mode)
+(require 'mmm-mode)
+(require 'vue-mode)
 
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
@@ -191,7 +203,7 @@
  '(elpy-test-django-with-manage t)
  '(elpy-test-runner (quote elpy-test-django-runner))
  '(jdee-server-dir "d:/git/jdee-server/target")
- '(package-selected-packages (quote (jdee highlight-indentation))))
+ '(package-selected-packages (quote (stylus-mode jdee highlight-indentation))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
