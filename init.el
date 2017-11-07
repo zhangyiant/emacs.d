@@ -17,6 +17,20 @@
 (setq-default c-indent-level 4)
 (setq-default indent-tabs-mode nil)
 
+(setq w32-pass-lwindow-to-system nil)
+(setq w32-lwindow-modifier 'super)
+(setq w32-pass-rwindow-to-system nil)
+(setq w32-rwindow-modifier 'super)
+
+(setq w32-pass-apps-to-system nil)
+(setq w32-apps-modifier 'hyper)
+
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'super)
+(setq mac-control-modifier 'control)
+(setq ns-function-modifier 'hyper)
+
+
 ;(global-linum-mode t)
 ;(setq-default indent-tabs-mode nil)
 
@@ -141,7 +155,8 @@
 (setq js2-mode-hook
       '(lambda () (progn
                     (set-variable 'indent-tabs-mode nil)
-                    (setq js2-basic-offset 2))))
+                    (setq js2-basic-offset 2)
+                    (js2-mode-hide-warnings-and-errors))))
 
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -149,6 +164,11 @@
 (require 'company)
 (require 'flycheck)
 (global-flycheck-mode)
+
+(setq-default flycheck-disabled-checkers
+              (append flycheck-disabled-checkers
+                      '(javascript-jshint)))
+(flycheck-add-mode 'javascript-eslint 'web-mode)
 
 (require 'elpy)
 (elpy-enable)
@@ -203,6 +223,7 @@
  '(elpy-test-django-with-manage t)
  '(elpy-test-runner (quote elpy-test-django-runner))
  '(jdee-server-dir "d:/git/jdee-server/target")
+ '(js2-mode-show-parse-errors nil)
  '(package-selected-packages (quote (stylus-mode jdee highlight-indentation))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
