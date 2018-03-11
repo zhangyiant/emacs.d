@@ -25,8 +25,8 @@
 (setq w32-pass-apps-to-system nil)
 (setq w32-apps-modifier 'hyper)
 
-(setq mac-command-modifier 'meta)
-(setq mac-option-modifier 'super)
+(setq mac-command-modifier 'super)
+(setq mac-option-modifier 'meta)
 (setq mac-control-modifier 'control)
 (setq ns-function-modifier 'hyper)
 
@@ -130,6 +130,7 @@
        '(("CMakeLists\\.txt\\'" . cmake-mode))
        '(("\\.cmake\\'" . cmake-mode))
        '(("\\.js\\'" . js2-mode))
+       '(("\\.json\\'" . js2-mode))
        auto-mode-alist))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 
@@ -161,6 +162,9 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(add-hook 'term-mode-hook (lambda()
+                            (setq yas-dont-activate t)))
+
 (require 'company)
 (require 'flycheck)
 (global-flycheck-mode)
@@ -182,7 +186,9 @@
 
 ;; adjust font size for large screen
 (if (string= (system-name) "peter-zhang.ads.autodesk.com")
-    (set-face-attribute 'default nil :height 150))
+  (set-face-attribute 'default nil :height 150)
+  (add-to-list 'initial-frame-alist '(height . 24))
+  (add-to-list 'initial-frame-alist '(width . 120)))
 
 (add-to-list 'auto-mode-alist '("pipeline_build_test.groovy.tpl\\'" . groovy-mode))
 (add-to-list 'auto-mode-alist '("build.groovy.tpl\\'" . groovy-mode))
@@ -224,7 +230,7 @@
  '(elpy-test-runner (quote elpy-test-django-runner))
  '(jdee-server-dir "d:/git/jdee-server/target")
  '(js2-mode-show-parse-errors nil)
- '(package-selected-packages (quote (stylus-mode jdee highlight-indentation))))
+ '(package-selected-packages (quote (mocha stylus-mode jdee highlight-indentation))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
