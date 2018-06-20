@@ -129,7 +129,7 @@
       (append
        '(("CMakeLists\\.txt\\'" . cmake-mode))
        '(("\\.cmake\\'" . cmake-mode))
-       '(("\\.js\\'" . js2-mode))
+       '(("\\.js\\'" . web-mode))
        '(("\\.json\\'" . js2-mode))
        auto-mode-alist))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
@@ -143,10 +143,10 @@
 
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
-    (setq web-mode-markup-indent-offset 2)
-    (setq web-mode-css-indent-offset 2)
-    (setq web-mode-code-indent-offset 2)
-    (setq web-mode-indent-style 2)
+    (setq web-mode-markup-indent-offset 4)
+    (setq web-mode-css-indent-offset 4)
+    (setq web-mode-code-indent-offset 4)
+    (setq web-mode-indent-style 4)
 )
 (add-hook 'web-mode-hook 'my-web-mode-hook)
 
@@ -156,7 +156,7 @@
 (setq js2-mode-hook
       '(lambda () (progn
                     (set-variable 'indent-tabs-mode nil)
-                    (setq js2-basic-offset 2)
+                    (setq js2-basic-offset 4)
                     (js2-mode-hide-warnings-and-errors))))
 
 (require 'yasnippet)
