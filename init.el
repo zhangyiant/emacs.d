@@ -139,7 +139,7 @@
 (require 'sws-mode)
 (require 'stylus-mode)
 (require 'mmm-mode)
-(require 'vue-mode)
+;(require 'vue-mode)
 
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
@@ -182,7 +182,7 @@
   (whitespace-mode))
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 
-(load "jdee")
+;(load "jdee")
 
 ;; adjust font size for large screen
 (if (string= (system-name) "peter-zhang.ads.autodesk.com")
