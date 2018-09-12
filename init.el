@@ -17,6 +17,8 @@
 (setq-default c-indent-level 4)
 (setq-default indent-tabs-mode nil)
 
+(setq c-default-style "linux")
+
 (setq w32-pass-lwindow-to-system nil)
 (setq w32-lwindow-modifier 'super)
 (setq w32-pass-rwindow-to-system nil)
