@@ -27,4 +27,4 @@
 (depends-on "yasnippet")
 (depends-on "pdf-tools")
 (depends-on "helm")
-(depends-on "lsp-mode" :git "https://github.com/zhangyiant/lsp-mode.git")
+(depends-on "lsp-mode")
