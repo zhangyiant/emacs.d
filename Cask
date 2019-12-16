@@ -28,3 +28,4 @@
 (depends-on "pdf-tools")
 (depends-on "helm")
 (depends-on "lsp-mode")
+(depends-on "groovy-mode")

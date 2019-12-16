@@ -66,6 +66,12 @@
 (global-set-key (kbd "<f8>") 'load-my-window-configuration-2)
 
 
+(projectile-mode +1)
+(setq projectile-indexing-method 'alien)
+(setq projectile-git-submodule-command nil)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
