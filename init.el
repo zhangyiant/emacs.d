@@ -39,7 +39,7 @@
 (pdf-tools-install)
 
 ;; adjust font size for large screen
-(if (string= (system-name) "peter-zhang.ads.autodesk.com")
+(if (string= (system-name) "peters-mbp.ads.autodesk.com")
   (set-face-attribute 'default nil :height 150)
   (add-to-list 'initial-frame-alist '(height . 24))
   (add-to-list 'initial-frame-alist '(width . 120)))
