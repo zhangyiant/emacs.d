@@ -29,3 +29,4 @@
 (depends-on "helm")
 (depends-on "lsp-mode")
 (depends-on "groovy-mode")
+(depends-on "tide")
