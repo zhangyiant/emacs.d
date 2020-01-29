@@ -44,6 +44,9 @@
   (add-to-list 'initial-frame-alist '(height . 24))
   (add-to-list 'initial-frame-alist '(width . 120)))
 
+(if (string= (system-name) "DESKTOP-HP0VOFT")
+    (set-face-attribute 'default nil :height 140))
+
 (defun save-my-window-configuration-1 ()
   "Save my window configuration 1."
   (interactive)
@@ -71,6 +74,8 @@
 (setq projectile-git-submodule-command nil)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+(editorconfig-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
