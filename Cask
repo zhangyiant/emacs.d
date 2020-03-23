@@ -32,3 +32,4 @@
 (depends-on "company-lsp")
 (depends-on "groovy-mode")
 (depends-on "tide")
+(depends-on "cmake-mode")
