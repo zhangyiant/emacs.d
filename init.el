@@ -25,6 +25,9 @@
 (setq mac-control-modifier 'control)
 (setq ns-function-modifier 'hyper)
 
+(require 'yasnippet)
+(yas-global-mode 1)
+
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x)
 
