@@ -25,6 +25,9 @@
 (setq mac-control-modifier 'control)
 (setq ns-function-modifier 'hyper)
 
+(require 'yasnippet)
+(yas-global-mode 1)
+
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x)
 
@@ -39,10 +42,13 @@
 (pdf-tools-install)
 
 ;; adjust font size for large screen
-(if (string= (system-name) "peter-zhang.ads.autodesk.com")
+(if (string= (system-name) "peters-mbp.ads.autodesk.com")
   (set-face-attribute 'default nil :height 150)
   (add-to-list 'initial-frame-alist '(height . 24))
   (add-to-list 'initial-frame-alist '(width . 120)))
+
+(if (string= (system-name) "DESKTOP-HP0VOFT")
+    (set-face-attribute 'default nil :height 140))
 
 (defun save-my-window-configuration-1 ()
   "Save my window configuration 1."
@@ -71,6 +77,8 @@
 (setq projectile-git-submodule-command nil)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+(editorconfig-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
