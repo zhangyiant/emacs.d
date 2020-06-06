@@ -50,6 +50,12 @@
 (if (string= (system-name) "DESKTOP-HP0VOFT")
     (set-face-attribute 'default nil :height 140))
 
+(if (string= (system-name) "DESKTOP-J6QA725")
+    (set-face-attribute 'default nil :height 140)
+    (add-to-list 'initial-frame-alist '(height . 64))
+)
+
+
 (defun save-my-window-configuration-1 ()
   "Save my window configuration 1."
   (interactive)
