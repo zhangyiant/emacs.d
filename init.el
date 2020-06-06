@@ -27,6 +27,7 @@
 
 (require 'yasnippet)
 (yas-global-mode 1)
+(setq yas-prompt-functions '(yas-x-prompt yas-dropdown-prompt))
 
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x)
