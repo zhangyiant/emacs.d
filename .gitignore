@@ -8,3 +8,5 @@ auto-save-list/
 *.pyc
 *.elc
 .cask/
+projectile-bookmarks.eld
+url/
