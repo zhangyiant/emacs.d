@@ -35,3 +35,4 @@
 (depends-on "editorconfig")
 (depends-on "tide")
 (depends-on "cmake-mode")
+(depends-on "powershell")
