@@ -40,7 +40,7 @@
 (add-hook 'c-mode-hook #'lsp)
 (add-hook 'c++-mode-hook #'lsp)
 
-(pdf-tools-install)
+;(pdf-tools-install)
 
 ;; adjust font size for large screen
 (if (string-suffix-p ".ads.autodesk.com" (system-name) )
