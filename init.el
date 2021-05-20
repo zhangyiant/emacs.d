@@ -2,6 +2,9 @@
 (cask-initialize)
 
 (setq inhibit-startup-screen t)
+
+(set-default-coding-systems 'utf-8)
+
 (modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
 (setq line-number-mode t)
 (setq column-number-mode t)
@@ -46,7 +49,7 @@
 ;; emacs tabs:
 (setq cmake-tab-width 4) 
 
-(pdf-tools-install)
+;(pdf-tools-install)
 
 ;; adjust font size for large screen
 (if (string-suffix-p ".ads.autodesk.com" (system-name) )
