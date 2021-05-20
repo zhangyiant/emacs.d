@@ -30,6 +30,7 @@
 (depends-on "helm")
 (depends-on "lsp-mode")
 (depends-on "cmake-mode")
+(depends-on "go-mode")
 (depends-on "company-lsp")
 (depends-on "groovy-mode")
 (depends-on "editorconfig")

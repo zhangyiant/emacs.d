@@ -32,13 +32,19 @@
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x)
 
-;set indent tabs
+;; set indent tabs
 (set-variable 'indent-tabs-mode nil)
 
 (require 'lsp-mode)
 (add-hook 'python-mode-hook #'lsp)
 (add-hook 'c-mode-hook #'lsp)
 (add-hook 'c++-mode-hook #'lsp)
+
+(require 'go-mode)
+(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
+
+;; emacs tabs:
+(setq cmake-tab-width 4) 
 
 (pdf-tools-install)
 
