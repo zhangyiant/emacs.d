@@ -37,3 +37,4 @@
 (depends-on "tide")
 (depends-on "cmake-mode")
 (depends-on "powershell")
+(depends-on "dockerfile-mode")
